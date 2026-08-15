@@ -31,6 +31,7 @@ function hidePopup() {
 }
 
 function playAudio() {
+  song.currentTime = 8; // Mengatur waktu mulai lagu ke detik ke-8
   song.volume = 1;
   audioIcon.style.display = "flex";
   song.play();
