@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // fitur Hitung Mundur
 // Mengatur waktu akhir perhitungan mundur
-var countDownDate = new Date("Dec 30, 2025 10:00:00").getTime();
+var countDownDate = new Date("Aug 25, 2026 08:00:00").getTime();
 
 // Memperbarui hitungan mundur setiap 1 detik
 var x = setInterval(function () {
@@ -91,7 +91,9 @@ var x = setInterval(function () {
 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("countdown").innerHTML = document.getElementById("days").innerHTML = 0;
+    document.getElementById("countdown").innerHTML = document.getElementById(
+      "days",
+    ).innerHTML = 0;
     document.getElementById("hours").innerHTML = 0;
     document.getElementById("minutes").innerHTML = 0;
     document.getElementById("seconds").innerHTML = 0;
